@@ -36,6 +36,7 @@ public class RoomService {
         room.setLocation(updatedRoom.getLocation());
         room.setAmenities(updatedRoom.getAmenities());
         room.setAvailable(updatedRoom.isAvailable());
+        System.out.println("room is updated"+room);
         return roomRepository.save(room);
     }
 
